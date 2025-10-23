@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Username Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Username Finder</h1>
+            <p class="subtitle">Generate professional email suggestions for your username</p>
+        </header>
+
+        <main>
+            <div class="main-card">
+                <div class="input-section">
+                    <label class="input-label" for="username">Enter your name or desired username</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="username" 
+                            class="username-input" 
+                            placeholder="e.g., johnsmith" 
+                            autocomplete="off"
+                        >
+                    </div>
+                </div>
+
+                <div class="region-filter">
+                    <label class="filter-label">Select regions</label>
+                    <div class="region-options">
+                        <div class="region-option">
+                            <input type="checkbox" id="allRegions" checked>
+                            <label for="allRegions">All 🌍</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="checkbox" id="europe">
+                            <label for="europe">Europe 🏰</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="checkbox" id="india">
+                            <label for="india">India 🇮🇳</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="checkbox" id="southKorea">
+                            <label for="southKorea">South Korea 🇰🇷</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="checkbox" id="russia">
+                            <label for="russia">Russia 🇷🇺</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="checkbox" id="china">
+                            <label for="china">China 🇨🇳</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="generateBtn" class="btn btn-primary">
+                        <span>Generate Emails</span>
+                    </button>
+                    <button id="resetBtn" class="btn btn-secondary">
+                        <span>Reset</span>
+                    </button>
+                </div>
+
+                <button id="copyAllBtn" class="btn btn-primary btn-copy-all">
+                    Copy All Email Addresses
+                </button>
+
+                <div id="results" class="results-section">
+                    <div class="results-header">
+                        <h2 class="results-title">Generated Email Addresses</h2>
+                        <span class="results-count" id="resultsCount">0 emails</span>
+                    </div>
+                    <div id="providerCategories" class="provider-categories"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        Made with ❤️ by Sauravhhh
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
